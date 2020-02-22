@@ -1,0 +1,225 @@
+<!--Main container-->
+<div class="container">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-md-4">
+        <!--Card-->
+        <mdb-card cascade="true" wider="true">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="http://www.marrelrefrigeration.com/images/refrigeration/secteurs/laboratoires-medicaux.jpg"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Card content-->
+            <!--Title-->
+            <h4 class="card-title">
+              <strong>Alice Mayer</strong>
+            </h4>
+            <h5 class="indigo-text">
+              <strong>Photographer</strong>
+            </h5>
+
+            <mdb-card-text>
+              Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam.
+            </mdb-card-text>
+
+            <!--Linkedin-->
+            <a class="px-2 icons-sm li-ic">
+              <mdb-icon fab icon="linkedin-in"> </mdb-icon>
+            </a>
+            <!--Twitter-->
+            <a class="px-2 icons-sm tw-ic">
+              <mdb-icon fab icon="twitter"> </mdb-icon>
+            </a>
+            <!--Dribbble-->
+            <a class="px-2 icons-sm fb-ic">
+              <mdb-icon fab icon="facebook-f"> </mdb-icon>
+            </a>
+
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+
+      <div class="col-md-4">
+        <!--Card-->
+        <mdb-card cascade="true" narrower="true">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="https://isis.siep.be/uploads/jobs/images/sidebar/technicien-ne-de-laboratoire-medical-59c0eb23a0e31.jpeg"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Card content-->
+            <h5 class="pink-text">
+              <mdb-icon fas icon="utensils"></mdb-icon> Culinary</h5>
+            <!--Title-->
+            <h4 class="card-title">Cheat day inspirations</h4>
+            <!--Text-->
+
+            <mdb-card-text>
+              Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam.
+            </mdb-card-text>
+
+            <a mdbBtn color="unique" class="waves-light" mdbWavesEffect>Button</a>
+
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+
+      <div class="col-md-4">
+        <!--Card-->
+        <mdb-card cascade="true">
+
+          <!--Card image-->
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+            <mdb-card-img src="https://www.pharmaceutique.ca/content/uploads/2017/08/Technicien-de-laboratoire-m%C3%A9dical.jpg"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--/Card image-->
+
+          <mdb-card-body cascade="true" class="text-center">
+            <!--Card content-->
+            <h4 class="card-title">
+              <strong>Billy Cullen</strong>
+            </h4>
+            <h5>Web developer</h5>
+
+            <mdb-card-text>
+              Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam.
+            </mdb-card-text>
+
+            <!--Facebook-->
+            <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
+              <mdb-icon fab icon="facebook-f"></mdb-icon>
+            </a>
+            <!--Twitter-->
+            <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
+              <mdb-icon fab icon="twitter"></mdb-icon>
+            </a>
+            <!--Google +-->
+            <a type="button" mdbBtn floating="true" size="sm" color="dribbble" class="waves-light" mdbWavesEffect>
+              <mdb-icon fab icon="dribbble"></mdb-icon>
+            </a>
+
+          </mdb-card-body>
+          <!--/.Card content-->
+
+        </mdb-card>
+        <!--/.Card-->
+      </div>
+    </div>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ut laborum delectus ea aspernatur at, praesentium harum animi dolor impedit blanditiis est vitae consectetur vero odit iste, non alias. Id!
+  </div>
+
+</div>
+
+  <div class="row">
+
+    <!--Grid column-->
+
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-6">
+      <div style="display: block">
+        <canvas mdbChart
+                [chartType]="chartType"
+                [datasets]="chartDatasets"
+                [labels]="chartLabels"
+                [colors]="chartColors"
+                [options]="chartOptions"
+                [legend]="true"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+
+
+
+
+      <!--Grid column-->
+      <div class="col-md-6">
+        <table class="table table-striped table-responsive-md btn-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                <button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0">Button</button>
+              </td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>
+                <button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0">Button</button>
+              </td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>
+                <button mdbBtn color="indigo" size="sm" mdbWavesEffect type="button" class="m-0">Button</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+
+      <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+  <!--Grid row-->
+
+  <!--Grid row-->
+
+</div>
+<!--Main container-->
