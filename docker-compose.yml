@@ -1,0 +1,14 @@
+version: '3'
+services:
+    avkdb:
+        image: avkdb
+        build: 
+            context: database
+        env_file:
+            - ./database/.env
+        volumes:
+            - $PWD/database/mysql-5.7/:/etc/mysql
+        networks:
+            - avk-net
+networks:
+    avk-net:
