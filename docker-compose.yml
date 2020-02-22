@@ -6,6 +6,8 @@ services:
             context: database
         env_file:
             - ./database/.env
+        ports:
+            - "3306:3306"
         volumes:
             - $PWD/database/mysql-5.7/:/etc/mysql
         networks:
