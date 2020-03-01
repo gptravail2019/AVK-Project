@@ -7,4 +7,4 @@ ENV MYSQL_DATABASE avk
 ENV MYSQL_USER=avk
 ENV MYSQL_PASSWORD=avk2019
 
-COPY ./sql-scripts/CreateTable.sql /docker-entrypoint-initdb.d/
+#COPY ./sql-scripts/CreateTable.sql /docker-entrypoint-initdb.d/
