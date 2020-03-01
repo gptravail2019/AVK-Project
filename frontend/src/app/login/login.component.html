@@ -1,0 +1,98 @@
+<!--Main Navigation-->
+<header>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main class="mt-5">
+<!--Main container-->
+<div class="container">
+
+  <!--Grid row-->
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-3">
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+  <!--Grid row-->
+  <div class="row mt-5">
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6">
+
+<!-- Material form login -->
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6">
+
+<!-- Default form login -->
+<form class="text-center border border-dark p-5" #loginForm="ngForm" (submit)="Login(loginForm)">
+
+  <p class="h4 mb-4">Sign in</p>
+
+  <!-- Email -->
+  <input type="email" id="defaultLoginFormEmail"  [(ngModel)]="emailInput"  name="email" class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Password -->
+  <input type="password" id="defaultLoginFormPassword" [(ngModel)]="passwordInput"  name="password"   class="form-control mb-4" placeholder="Password">
+
+  <div class="d-flex justify-content-around">
+    <div>
+      <!-- Remember me -->
+      <mdb-checkbox [default]="true">Remember me</mdb-checkbox>
+    </div>
+    <div>
+      <!-- Forgot password -->
+      <a href="">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Sign in button -->
+  <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
+
+  <!-- Register -->
+  <p>Not a member?
+    <a href="">Register</a>
+  </p>
+
+
+</form>
+<!-- Default form login -->
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-3">
+
+
+
+      </div>
+      <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</div>
+<!--Main container--></main>
+<!--Main layout-->
+
+<!--Footer-->
+<footer>
+
+</footer>
+<!--Footer-->
+
+
