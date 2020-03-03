@@ -16,6 +16,8 @@ flask_migrate = "*"
 marshmallow = "*"
 flask-mysql = "*"
 mysqlclient = "*"
+pony = "*"
+flask-env = "*"
 
 [requires]
 python_version = "3.7"
