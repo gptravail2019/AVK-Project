@@ -1,19 +1,23 @@
 import os
-from os import environ
+from pony import orm
+from pony.orm import *
+from dotenv import load_dotenv
+load_dotenv()
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-SQLALCHEMY_ECHO = False
-SQLALCHEMY_TRACK_MODIFICATIONS = True
-SQLALCHEMY_DATABASE_URI = 'mysql://root:root@0.0.0.0:3307/avk'
+from pathlib import Path  # python3 only
+env_path = Path('.') / '.env'
 
-FLASK_DEBUG = environ.get('FLASK_DEBUG')
-SECRET_KEY = environ.get('SECRET_KEY')
+load_dotenv(dotenv_path=env_path)
 
-db.bind(provider='mysql', host='', user='', passwd='', db='')
+provider = os.getenv("PROVIDER")
+dbhost = os.getenv("DBHOST")
+dbuser = os.getenv("DBUSER")
+dbpasswd = os.getenv("DBPWD")
+dbase = os.getenv("DATABASE")
 
-PROVIDER='mysql'
-DBHOST='0.0.0.0'
-DBUSER='root'
-DBPWD=root
-DATABASE=avk
+sqldebug = set_sql_debug(os.getenv("SQL_DEBUG"))
+
+db = Database()
+connection = db.bind(provider=provider, host=dbhost, user=dbuser, passwd=dbpasswd, db=dbase)
+
 

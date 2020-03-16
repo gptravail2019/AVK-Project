@@ -18,6 +18,8 @@ flask-mysql = "*"
 mysqlclient = "*"
 pony = "*"
 flask-env = "*"
+python-dotenv = "*"
+pymysql = "*"
 
 [requires]
 python_version = "3.7"

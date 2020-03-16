@@ -1,4 +1,4 @@
 #!/bin/bash
 CONNECTEDUSER="$(whoami)"
 
-sudo chown -R $CONNECTEDUSER:$CONNECTEDUSER ./
+sudo chown -R $CONNECTEDUSER:$CONNECTEDUSER ./database/
